@@ -39,21 +39,23 @@ export BASE16_SHELL="$HOME/.config/base16-shell/"
 #=================================================================
 #-Env Variables----------------------------------------------------
 #==================================================================
-PATH="/home/mrangel/perl5/bin${PATH:+:${PATH}}"; export PATH;
+
+#Perl Variables----------------------------------------------------
 PERL5LIB="/home/mrangel/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5LIB;
 PERL_LOCAL_LIB_ROOT="/home/mrangel/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
 PERL_MB_OPT="--install_base \"/home/mrangel/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/mrangel/perl5"; export PERL_MM_OPT;
+#git Variables----------------------------------------------------
 GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 # BEGIN_KITTY_SHELL_INTEGRATION
 if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; then source "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; fi
-# END_KITTY_SHELL_INTEGRATION
+PATH="/home/mrangel/perl5/bin${PATH:+:${PATH}}"; export PATH;
 export EDITOR="nvim"
 export TERMINAL="alacritty"
 #export BROWSER=""
 export TRUEBROWSER="brave"
 export HISTCONTROL=ignoredups
-export HISTFILESIZE=10000
-export HISTSIZE=10000
+export HISTFILESIZE=50000
+export HISTSIZE=50000
 export HISTFILE=~/.cache/.bash_history
 
