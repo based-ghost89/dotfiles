@@ -32,10 +32,10 @@ alias printenv='printenv | sort'
 PS1='[\u@\h \W]\$ '
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 # Set up for base 16 shell
-export BASE16_SHELL="$HOME/.config/base16-shell/"
+BASE16_SHELL="$HOME/.config/base16-shell/"
 [ -n "$PS1" ] && \
-[ -s "$BASE16_SHELL/profile_helper.sh" ] &&  
-  eval "$("$BASE16_SHELL/profile_helper.sh")"
+  [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+    eval "$("$BASE16_SHELL/profile_helper.sh")"
 #=================================================================
 #-Env Variables----------------------------------------------------
 #==================================================================
