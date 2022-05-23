@@ -18,7 +18,7 @@ alias suspend='systemctl suspend'
 alias cpufetch='cpufetch --style retro'
 alias vim='nvim -u /home/mrangel/.config/nvim/init.lua'
 alias dir='dir --color=always'
-alias rm='trash --trash-dir=/home/mrangel/trash'
+alias rm='trash'
 alias trash-empty='trash-empty --trash-dir=/home/mrangel/trash/'
 alias printenv='printenv | sort'
 #================================================================
