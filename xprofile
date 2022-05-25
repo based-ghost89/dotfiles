@@ -1,0 +1,19 @@
+#!/bin/sh
+
+#Vulkan
+#export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json:/usr/share/vulkan/icd.d/intel_icd.x86_64.json
+#export PATH=$PATH:/home/mrangel/.cargo/bin
+
+#Mesa
+#optios for below mesa,zink
+#export MESA_LOADER_DRIVER_OVERRIDE=mesa _GLX_VENDOR_LIBRARY_NAME=zink GALLIUM_DRIVER=zink
+#export _GLX_VENDOR_LIBRARY_NAME=zink
+
+#export LIBGL_ALWAYS_SOFTWARE=true
+
+#options for belowvirpipe,softpipe,llvmpipe,swr
+#export GALLIUM_DRIVER=
+
+#Mesa cache 
+#export XDG_SHADER_HOME=~/.cache/
+#export XDG_SHADER_CACHE_DIR=~/.cache/mesa_shader_cache
