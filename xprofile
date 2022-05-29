@@ -15,5 +15,5 @@
 #export GALLIUM_DRIVER=
 
 #Mesa cache 
-#export XDG_SHADER_HOME=~/.cache/
-#export XDG_SHADER_CACHE_DIR=~/.cache/mesa_shader_cache
+export XDG_SHADER_HOME=~/.cache/
+export XDG_SHADER_CACHE_DIR=~/.cache/mesa_shader_cache

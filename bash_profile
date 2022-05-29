@@ -10,6 +10,7 @@ export EDITOR="nvim"
 export TERMINAL="alacritty"
 #export BROWSER=""
 export TRUEBROWSER="brave"
+export XDG_CONFIG_HOME=~/.config/
 export HISTCONTROL=ignoredups
 export HISTFILESIZE=50000
 export HISTSIZE=50000
