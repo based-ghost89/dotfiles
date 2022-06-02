@@ -19,7 +19,6 @@ alias cpufetch='cpufetch --style retro'
 alias vim='nvim -u /home/mrangel/.config/nvim/init.lua'
 alias dir='dir --color=always'
 alias rm='trash'
-alias trash-empty='trash-empty --trash-dir=/home/mrangel/trash/'
 alias printenv='printenv | sort'
 #================================================================
 #-Start With Shell-----------------------------------------------
@@ -32,10 +31,10 @@ alias printenv='printenv | sort'
 PS1='[\u@\h \W]\$ '
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 # Set up for base 16 shell
-BASE16_SHELL="$HOME/.config/base16-shell/"
-[ -n "$PS1" ] && \
-  [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
-    eval "$("$BASE16_SHELL/profile_helper.sh")"
+# BASE16_SHELL="$HOME/.config/base16-shell/"
+# [ -n "$PS1" ] && \
+#   [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+#     eval "$("$BASE16_SHELL/profile_helper.sh")"
 #=================================================================
 #-Env Variables----------------------------------------------------
 #==================================================================
