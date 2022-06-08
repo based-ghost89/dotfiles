@@ -19,8 +19,21 @@ export HISTFILE=~/.cache/.bash_history
 export GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 export WINIT_HIDPI_FACTOR=1.0 alacritty
 export PATH=$PATH:/home/mrangel/.cargo/bin
+#fzf
+if [[ ! "$PATH" == */home/mrangel/.config/fzf/bin* ]]; then
+  export PATH="${PATH:+${PATH}:}/home/mrangel/.config/fzf/bin"
+fi
+
+# Auto-completion
+# ---------------
+[[ $- == *i* ]] && source "/home/mrangel/.config/fzf/shell/completion.bash" 2> /dev/null
+
+# Key bindings
+# ------------
+source "/home/mrangel/.config/fzf/shell/key-bindings.bash"
 
 #Vulkan
+#/usr/share/vulkan/icd.d/nvidia_icd.json:
 export VK_ICD_FILENAMES=/usr/share/vulkan/icd.d/nvidia_icd.json:/usr/share/vulkan/icd.d/intel_icd.x86_64.json
 export VN_DEBUG=vtest
 
