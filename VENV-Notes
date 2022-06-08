@@ -1,0 +1,11 @@
+Currently venv directory:
+python-pip
+
+python-pip:
+1. Create a python virtual enviorment 
+  python3 -m venv ~/venv/
+2. Activate python virtual enviorment
+  source ~/venv/bin/activate
+3. To deactivate 
+  deactivate
+VIRTUAL_ENV variable can be set 
