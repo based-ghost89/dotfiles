@@ -10,4 +10,9 @@ autoconf
 clang
 bison
 meson
+#mesa
+python-mako
+llvm-devel
+flex
+libxshmfence-devel
 
