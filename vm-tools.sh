@@ -4,3 +4,15 @@ mkdir ~/.config/alacritty &&
 mkdir ~/.config/tmux &&
   cp ~/repos/dotfiles/tmux.conf ~/.config/tmux/tmux.conf
 wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/SpaceMono.zip
+#virglrenderer
+cmake
+autoconf
+clang
+bison
+meson
+#mesa
+python-mako
+llvm-devel
+flex
+libxshmfence-devel
+

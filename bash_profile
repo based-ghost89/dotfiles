@@ -42,13 +42,12 @@ export VN_DEBUG=vtest
 #export MESA_LOADER_DRIVER_OVERRIDE=mesa _GLX_VENDOR_LIBRARY_NAME=zink GALLIUM_DRIVER=zink
 #export _GLX_VENDOR_LIBRARY_NAME=zink
 
-#export LIBGL_ALWAYS_SOFTWARE=true
-
-#options for belowvirpipe,softpipe,llvmpipe,swr
-#export GALLIUM_DRIVER=
-
 #Mesa cache 
 export XDG_SHADER_HOME=~/.cache/
 export XDG_SHADER_CACHE_DIR=~/.cache/mesa_shader_cache
+
+#options for belowvirpipe,softpipe,llvmpipe,swr (use together)
+#export GALLIUM_DRIVER=
+#export LIBGL_ALWAYS_SOFTWARE=true
 #fastfetch
 #startx
