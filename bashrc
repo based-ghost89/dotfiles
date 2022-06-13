@@ -18,8 +18,7 @@ alias suspend='systemctl suspend'
 alias cpufetch='cpufetch --style retro'
 alias vim='nvim -u /home/mrangel/.config/nvim/init.lua'
 alias dir='dir --color=always'
-alias rm='trash --trash-dir=/home/mrangel/trash'
-alias trash-empty='trash-empty --trash-dir=/home/mrangel/trash/'
+alias rm='trash'
 alias printenv='printenv | sort'
 #================================================================
 #-Start With Shell-----------------------------------------------
@@ -32,10 +31,10 @@ alias printenv='printenv | sort'
 PS1='[\u@\h \W]\$ '
 [ -f ~/.fzf.bash ] && source ~/.fzf.bash
 # Set up for base 16 shell
-BASE16_SHELL="$HOME/.config/base16-shell/"
-[ -n "$PS1" ] && \
-  [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
-    eval "$("$BASE16_SHELL/profile_helper.sh")"
+# BASE16_SHELL="$HOME/.config/base16-shell/"
+# [ -n "$PS1" ] && \
+#   [ -s "$BASE16_SHELL/profile_helper.sh" ] && \
+#     eval "$("$BASE16_SHELL/profile_helper.sh")"
 #=================================================================
 #-Env Variables----------------------------------------------------
 #==================================================================
@@ -45,13 +44,11 @@ PERL5LIB="/home/mrangel/perl5/lib/perl5${PERL5LIB:+:${PERL5LIB}}"; export PERL5L
 PERL_LOCAL_LIB_ROOT="/home/mrangel/perl5${PERL_LOCAL_LIB_ROOT:+:${PERL_LOCAL_LIB_ROOT}}"; export PERL_LOCAL_LIB_ROOT;
 PERL_MB_OPT="--install_base \"/home/mrangel/perl5\""; export PERL_MB_OPT;
 PERL_MM_OPT="INSTALL_BASE=/home/mrangel/perl5"; export PERL_MM_OPT;
-#git Variables----------------------------------------------------
-GIT_DISCOVERY_ACROSS_FILESYSTEM=1
 # BEGIN_KITTY_SHELL_INTEGRATION
 if test -n "$KITTY_INSTALLATION_DIR" -a -e "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; then source "$KITTY_INSTALLATION_DIR/shell-integration/bash/kitty.bash"; fi
-PATH="/home/mrangel/perl5/bin${PATH:+:${PATH}}"; export PATH;
+export PATH="/home/mrangel/perl5/bin${PATH:+:${PATH}}"; export PATH;
 export EDITOR="nvim"
-export TERMINAL="alacritty"
+export TERM="alacritty"
 #export BROWSER=""
 export TRUEBROWSER="brave"
 export HISTCONTROL=ignoredups
