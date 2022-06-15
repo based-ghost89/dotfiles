@@ -1,0 +1,11 @@
+#Node
+npm -g install neovim
+#Opensuse
+gcc12-c++
+gcc-c++
+clang
+g++
+7zip
+unzip
+ripgrep
+fd

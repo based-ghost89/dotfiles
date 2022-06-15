@@ -1,10 +1,27 @@
 #!/bin/sh
-# Lines configured by zsh-newuser-install
-HISTFILE=~/.cache/zsh_history
-HISTSIZE=50000
-SAVEHIST=50000
+
+export ZDOTDIR=$HOME/.config/zsh
+# source "$HOME"/.config/zsh/.zshrc
+#!/bin/sh
+setopt appendhistory
+#
+# some usefull options (man zshoptions)
+setopt autocd extendedglob nomatch menucomplete
+setopt interactive_comments
+zle_highlight=('paste:none')
+
+autoload -Uz compinit
+compinit
+HISTFILE=~/.config/zsh/.histfile
+HISTSIZE=10000
+SAVEHIST=10000
+unsetopt autocd beep
+bindkey -e
 # End of lines configured by zsh-newuser-install
-alias ls='ls -a --color=auto'
-alias rm='trash'
-alias nvim='nvim -u /home/mrangel/.config/nvim/init.lua'
+# Start of My added lines
+autoload -Uz promptinit
+promptinit
+#prompt redhat
+zstyle ':completion:*' menu select
+
 
