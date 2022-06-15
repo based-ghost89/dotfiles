@@ -1,6 +1,10 @@
+python-virtualenv
+export VIRTUAL_ENV=~/.config/python-pip/venv/bin/
+
 #Node
+nvm 
 npm -g install neovim
-#Opensuse
+#Opensuse or Arch
 gcc12-c++
 gcc-c++
 clang
@@ -9,3 +13,4 @@ g++
 unzip
 ripgrep
 fd
+luarocks
