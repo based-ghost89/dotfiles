@@ -21,6 +21,8 @@ export WINIT_HIDPI_FACTOR=1.0 alacritty
 export PATH=$PATH:/home/mrangel/.cargo/bin
 #Python
 export VIRTUAL_ENV="$XDG_CONFIG_HOME/python-venv/bin/"
+#cargo
+export CARGO_HOME="XDG_CONFIG_HOME/cargo"
 #fzf
 if [[ ! "$PATH" == */home/mrangel/.config/fzf/bin* ]]; then
   export PATH="${PATH:+${PATH}:}/home/mrangel/.config/fzf/bin"
